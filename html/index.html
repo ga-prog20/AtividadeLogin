@@ -14,15 +14,17 @@
     <script src="https://kit.fontawesome.com/359deb3264.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
-    <header> 
+    <header>
+        <h1>Login-Helper</h1> 
+    </header>
     <main>
         <form>
             <section class="inputs-container">
              <input type="email" placeholder="example@gmail.com">  
                 <div class="password-container"></div>
                 <input type="password" id="field-password" class="field-password" placeholder="********">
-                <i class="fas fa-eye"></i>
-                <i class="fas fa-eye-slash"></i>
+                <i class="fas fa-eye" id="eye" onclick="showPassword()"></i>
+                <i class="fas fa-eye-slash" id="eye-slash" onclick="showPassword()"></i>
             </section>
             
             <section class="password-infos">
@@ -39,9 +41,9 @@
             <section class="links-container">
               <span>Ou entre com:</span>
               <aside>
-                  <a href="a"><i class="fab fa-google-plus-square"></i></a>
-                  <a href="a"><i class="fab fa-facebook-square"></i></a>
-                  <a href="a"><i class="fab fa-instagram"></i></a>
+                  <a href="a"><i class="fab fa-google-plus-square google"></i></a>
+                  <a href="a"><i class="fab fa-facebook-square facebook"></i></a>
+                  <a href="a"><i class="fab fa-instagram instagram"></i></a>
               </aside>
             </section>
              <footer>
@@ -49,7 +51,6 @@
                  <span>Ainda não tem uma conta? <a href="a">Cadastre-se</a></span>
              </footer>
       </form>
-    </header>
 
     </main>
 </body>
